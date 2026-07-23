@@ -11,7 +11,7 @@
 <br>
 
 Portfólio pessoal de **Raphael Augusto** (também conhecido como *alfa141* /
-*Rapha Santos*): skins, mods, mapas e edições criados para jogos como Point
+*Raphael Santos*): skins, mods, mapas e edições criados para jogos como Point
 Blank, Rocket League, Euro Truck Simulator 2, Minecraft e GTA San Andreas —
 além de um jogo autoral e trabalhos de Photoshop.
 
