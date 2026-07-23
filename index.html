@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raphael Augusto — Designer</title>
+<meta name="description" content="Portfólio de Raphael Augusto: skins, mods e edições para Point Blank, Rocket League, GTA San Andreas, Minecraft e mais.">
+<link rel="icon" href="assets/logo/logo-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+<!-- ================= SIDE / TOP NAV ================= -->
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav__brand">
+    <img src="assets/logo/logo-icon.png" alt="RA" class="nav__brand-icon">
+  </a>
+
+  <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav__list" id="navList">
+    <a href="#inicio" class="nav__link" data-nav>Início</a>
+    <a href="#sobre" class="nav__link" data-nav>Sobre</a>
+    <a href="#point-blank" class="nav__link" data-nav>Point Blank</a>
+    <a href="#rocket-league" class="nav__link" data-nav>Rocket League</a>
+    <a href="#screenshots" class="nav__link" data-nav>Screenshots</a>
+    <a href="#minecraft" class="nav__link" data-nav>Minecraft</a>
+    <a href="#gta-sa" class="nav__link" data-nav>GTA San Andreas</a>
+    <a href="#ets2" class="nav__link" data-nav>ETS2</a>
+    <a href="#jogo-autoral" class="nav__link" data-nav>Jogo Autoral</a>
+    <a href="#photoshop" class="nav__link" data-nav>Edições</a>
+    <a href="#contato" class="nav__link" data-nav>Contato</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section id="inicio" class="hero">
+    <div class="hero__reticle" aria-hidden="true">
+      <span class="corner corner--tl"></span><span class="corner corner--tr"></span>
+      <span class="corner corner--bl"></span><span class="corner corner--br"></span>
+    </div>
+    <div class="hero__inner">
+      <img src="assets/logo/logo-full.png" alt="Raphael Augusto Designer" class="hero__logo">
+      <p class="hero__tagline">
+        <span class="eyebrow">Skins · Mods · Edições · Mapas 3D</span>
+        Design gráfico e visual para jogos — de packs de armas a carros, terrenos e mundos inteiros.
+      </p>
+      <div class="hero__actions">
+        <a href="#point-blank" class="btn btn--primary">Ver projetos</a>
+        <a href="#contato" class="btn btn--ghost">Fazer contato</a>
+      </div>
+    </div>
+    <div class="hero__scan" aria-hidden="true"></div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre" class="section section--about">
+    <div class="section__head">
+      <span class="eyebrow">Sobre</span>
+      <h2 class="section__title">Da assinatura <span class="text-amber">alfa141</span> ao estúdio<br>Raphael Augusto Designer</h2>
+    </div>
+    <p class="about__text">
+      Comecei criando e distribuindo <strong>skins para Point Blank</strong> sob o nome <em>alfa141</em> (assinando também
+      como Rapha Santos), hospedando os packs para a comunidade baixar e testar. Com o tempo o trabalho cresceu para
+      edições em Photoshop, mapas no Minecraft, pintura de carros no GTA San Andreas, screenshots de simuladores de
+      corrida e até um jogo autoral do zero. Hoje reúno tudo isso sob uma identidade só —
+      esse portfólio é o arquivo vivo desse trabalho.
+    </p>
+  </section>
+
+  <!-- ================= POINT BLANK ================= -->
+  <section id="point-blank" class="section">
+    <div class="section__head">
+      <span class="eyebrow">Point Blank</span>
+      <h2 class="section__title">Packs de armas</h2>
+      <p class="section__desc">Skins organizadas por tipo de arma. Baixe o pack direto do Mediafire ou visualize o modelo em 3D antes de baixar.</p>
+    </div>
+
+    <div class="filters-block" id="pbFilters"></div>
+    <div class="grid" id="pbGrid"></div>
+    <div class="pagination" id="pbPagination"></div>
+
+    <div class="subsection">
+      <div class="section__head section__head--sub">
+        <span class="eyebrow">Só ficaram no papel</span>
+        <h3 class="section__title section__title--sm">Projetos de Point Blank</h3>
+        <p class="section__desc">Artes e conceitos de skins que nunca viraram pack final.</p>
+      </div>
+      <div class="grid" id="pbProjectsGrid"></div>
+      <div class="pagination" id="pbProjectsPagination"></div>
+    </div>
+  </section>
+
+  <!-- ================= ROCKET LEAGUE ================= -->
+  <section id="rocket-league" class="section section--alt">
+    <div class="section__head">
+      <span class="eyebrow">Rocket League</span>
+      <h2 class="section__title">Skins de carros</h2>
+      <p class="section__desc">Organizadas por chassi. Mesmo esquema do Point Blank: download e visualização em 3D.</p>
+    </div>
+    <div class="filters" id="rlFilters"></div>
+    <div class="grid" id="rlGrid"></div>
+    <div class="pagination" id="rlPagination"></div>
+  </section>
+
+  <!-- ================= SCREENSHOTS ================= -->
+  <section id="screenshots" class="section">
+    <div class="section__head">
+      <span class="eyebrow">Capturas</span>
+      <h2 class="section__title">Screenshots</h2>
+      <p class="section__desc">Fotografias in-game e renders, organizados por jogo/ferramenta.</p>
+    </div>
+    <div class="filters" id="ssFilters"></div>
+    <div class="grid" id="ssGrid"></div>
+    <div class="pagination" id="ssPagination"></div>
+  </section>
+
+  <!-- ================= MINECRAFT ================= -->
+  <section id="minecraft" class="section section--alt">
+    <div class="section__head">
+      <span class="eyebrow">Minecraft</span>
+      <h2 class="section__title">Mapas</h2>
+      <p class="section__desc">Mundos e construções criados no Minecraft, disponíveis para download.</p>
+    </div>
+    <div class="grid" id="mcGrid"></div>
+    <div class="pagination" id="mcPagination"></div>
+  </section>
+
+  <!-- ================= GTA SAN ANDREAS ================= -->
+  <section id="gta-sa" class="section">
+    <div class="section__head">
+      <span class="eyebrow">GTA San Andreas</span>
+      <h2 class="section__title">Paint Jobs &amp; Skins</h2>
+      <p class="section__desc">Pinturas e skins de veículos criadas para o GTA San Andreas.</p>
+    </div>
+    <div class="grid" id="gtaGrid"></div>
+    <div class="pagination" id="gtaPagination"></div>
+  </section>
+
+  <!-- ================= EURO TRUCK SIMULATOR 2 ================= -->
+  <section id="ets2" class="section section--alt">
+    <div class="section__head">
+      <span class="eyebrow">Euro Truck Simulator 2</span>
+      <h2 class="section__title">Skins de caminhões</h2>
+      <p class="section__desc">Organizadas por marca. Baixe o pack direto do Mediafire ou visualize o modelo em 3D antes de baixar.</p>
+    </div>
+    <div class="filters" id="ets2Filters"></div>
+    <div class="grid" id="ets2Grid"></div>
+    <div class="pagination" id="ets2Pagination"></div>
+  </section>
+
+  <!-- ================= JOGO AUTORAL ================= -->
+  <section id="jogo-autoral" class="section section--feature">
+    <div class="section__head">
+      <span class="eyebrow">Projeto autoral</span>
+      <h2 class="section__title">Jogo próprio</h2>
+    </div>
+    <div class="feature" id="gameFeature"></div>
+  </section>
+
+  <!-- ================= PHOTOSHOP ================= -->
+  <section id="photoshop" class="section section--alt">
+    <div class="section__head">
+      <span class="eyebrow">Edições</span>
+      <h2 class="section__title">Photoshop</h2>
+      <p class="section__desc">Composições e manipulações criadas no Photoshop.</p>
+    </div>
+    <div class="grid" id="psGrid"></div>
+    <div class="pagination" id="psPagination"></div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section id="contato" class="section section--contact">
+    <div class="section__head">
+      <span class="eyebrow">Contato</span>
+      <h2 class="section__title">Vamos conversar</h2>
+      <p class="section__desc">Pedidos de packs, parcerias ou só um comentário sobre algum projeto — pode chamar.</p>
+    </div>
+    <div class="contact__row">
+      <a href="mailto:raphaell_carros@hotmail.com" class="btn btn--primary">raphaell_carros@hotmail.com</a>
+      <div class="contact__social" id="socialLinks"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img src="assets/logo/logo-icon.png" alt="RA" class="footer__icon">
+  <p>© <span id="year"></span> Raphael Augusto Designer. Todos os direitos reservados.</p>
+</footer>
+
+<!-- ================= MODAL: 3D VIEWER ================= -->
+<div class="modal" id="modelModal" aria-hidden="true">
+  <div class="modal__panel modal__panel--model">
+    <button class="modal__close" id="modelModalClose" aria-label="Fechar">✕</button>
+    <h3 class="modal__title" id="modelModalTitle"></h3>
+    <model-viewer id="modelViewer" class="modal__model" camera-controls auto-rotate shadow-intensity="1" exposure="1" style="background: transparent;"></model-viewer>
+    <p class="modal__hint">Arraste para girar · Scroll para dar zoom</p>
+  </div>
+</div>
+
+<!-- ================= MODAL: IMAGE LIGHTBOX ================= -->
+<div class="modal" id="imageModal" aria-hidden="true">
+  <div class="modal__panel modal__panel--image">
+    <button class="modal__close" id="imageModalClose" aria-label="Fechar">✕</button>
+    <img id="imageModalImg" src="" alt="">
+    <p class="modal__title" id="imageModalTitle"></p>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
